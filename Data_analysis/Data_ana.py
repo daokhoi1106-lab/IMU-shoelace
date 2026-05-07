@@ -76,7 +76,7 @@ for i, name in enumerate(['X', 'Y', 'Z']):
 gyro_bias = get_static_bias(5)
 
 # 3. Start Recording
-filename = f"gait_trial_{int(time.time())}.csv"
+filename = f"gait_trial.csv"
 with open(filename, "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["acc_x", "acc_y", "acc_z", "gyro_x", "gyro_y", "gyro_z"])
